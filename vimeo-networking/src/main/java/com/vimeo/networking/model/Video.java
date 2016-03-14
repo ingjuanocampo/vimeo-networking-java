@@ -150,10 +150,13 @@ public class Video implements Serializable {
         return getRawStatus();
     }
 
+    /**
+     * Setting the status should only be fore debug purposes
+     */
+    @Deprecated
     public void setStatus(Status status) {
         this.status = status;
     }
-
 
     /**
      * -----------------------------------------------------------------------------------------------------
